@@ -2,7 +2,8 @@ def nyc_pigeon_organizer(data)
   
   pigeon_list = {}
   data.each do |n,value1|
-    value1.each do |names|
+    value1.each do |n2, value2|
+      value2.each do |names|
       pigeon_list[names] = {:color => [], :gender => [], :lives => []}
        end
      end
@@ -42,5 +43,4 @@ def nyc_pigeon_organizer(data)
 
 
  return pigeon_list
-
 end
